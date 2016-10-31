@@ -8,7 +8,7 @@ lastnumber = 0
 
 while True:
     try:
-        jsonurl = 'http://a.4cdn.org/' + board + '/1.json'
+        jsonurl = 'http://api.4chan.org/' + board + '/1.json'
         r = urlopen(jsonurl)
         jsonstring = r.read().decode('utf-8')
         json = JSON.loads(jsonstring)
